@@ -1,0 +1,112 @@
+![banner-light](./screenshots/banner-light.svg#gh-light-mode-only)
+![banner-dark](./screenshots/banner-dark.svg#gh-dark-mode-only)
+
+# Bluloco.nvim
+
+> [!NOTE]
+> This is a fork of the original [Bluloco for neovim](https://github.com/uloco/bluloco.nvim)
+> by the awesome [uloco](https://github.com/uloco).
+>
+> All hard work was done by him,
+> I just removed the lush dependency and the terminal themes.
+
+A fancy and sophisticated designer neovim theme.
+It features a much more comprehensive usage of syntax scopes and color
+consistency, with due regards to aesthetics, contrast and readability.
+There is a light and dark variant.
+Most popular plugins are also supported, see [Plugins](#plugins)
+
+This theme also works very good with blue light filters like Apple's *Nightshift Mode* or *f.lux*.
+
+This is a port of the popular Visual Studio Code Themes
+[Bluloco Light](https://github.com/uloco/theme-bluloco-light) and
+[Bluloco Dark](https://github.com/uloco/theme-bluloco-dark)
+
+### Dark
+
+![dark](./screenshots/dark.png)
+
+### Light
+
+![light](./screenshots/light.png)
+
+## Features
+
+- Exhaustive plugin support
+- Written in lua
+
+## Plugins
+
+Currently supported (aka. tested) plugins:
+
+- [treesitter](https://github.com/nvim-treesitter/nvim-treesitter")
+- [hlargs](https://github.com/m-demare/hlargs.nvim)
+- [alpha-nvim](https://github.com/goolord/alpha-nvim)
+- [nvim-notify](https://github.com/rcarriga/nvim-notify)
+- [mason.nvim](https://github.com/williamboman/mason.nvim)
+- [nvim-cursorword](https://github.com/xiyaowong/nvim-cursorword)
+- [vim-illuminate](https://github.com/RRethy/vim-illuminate)
+- [nvim-scrollbar](https://github.com/petertriho/nvim-scrollbar)
+- [lualine.nvim](https://github.com/hoob3rt/lualine.nvim)
+- [barbar.nvim](https://github.com/romgrk/barbar.nvim)
+- [nvim-bufferline.lua](https://github.com/akinsho/nvim-bufferline.lua)
+- [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
+- [neogit](https://github.com/TimUntersberger/neogit)
+- [diffview.nvim](https://github.com/sindrets/diffview.nvim)
+- [git-conflict.nvim](https://github.com/akinsho/git-conflict.nvim)
+- [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
+- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
+- [vim-which-key](https://github.com/liuchengxu/vim-which-key)
+- [which-key.nvim](https://github.com/folke/which-key.nvim)
+- [todo-comments.nvim](https://github.com/folke/todo-comments.nvim)
+- [trouble.nvim](https://github.com/folke/trouble.nvim)
+- [nvim-tree.lua](https://github.com/kyazdani42/nvim-tree.lua)
+- [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
+- [telescope-file-browser.nvim](https://github.com/nvim-telescope/telescope-file-browser.nvim)
+- [lsp-config](https://github.com/neovim/lsp-config)
+- [lspsaga.nvim](https://github.com/glepnir/lspsaga.nvim)
+
+## Install
+
+Install Bluloco with your favorite package manager.
+
+### [packer](https://github.com/wbthomason/packer.nvim)
+
+```lua
+use {
+    'mistweaverco/bluloco.nvim'
+}
+```
+
+### [lazy.nvim](https://github.com/folke/lazy.nvim)
+
+```lua
+{
+  'mistweaverco/bluloco.nvim',
+  config = function()
+    require('bluloco').setup({
+      theme = 'dark', -- or 'light'
+    })
+  end,
+  lazy = false,
+  priority = 1000,
+},
+```
+
+## Usage
+
+```lua
+vim.opt.termguicolors = true
+vim.cmd('colorscheme bluloco')
+```
+#### Lualine
+
+Make sure your lualine settings are set to auto:
+
+```lua
+require('lualine').setup {
+  options = {
+    theme = 'auto'
+  }
+}
+```
