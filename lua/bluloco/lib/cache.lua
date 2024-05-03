@@ -1,5 +1,5 @@
 local config = require("bluloco").config
-local compile_path = "lua/cache"
+local compile_path = "lua/bluloco/cache"
 local cache_path = compile_path .. "/" .. config.theme .. ".lua"
 
 local M = {}
@@ -21,7 +21,7 @@ M.write = function(colors)
 end
 
 M.read = function()
-  local colors = require('cache.' .. config.theme)
+  local colors = require('bluloco.cache.' .. config.theme)
   if not colors then
     return nil
   end
