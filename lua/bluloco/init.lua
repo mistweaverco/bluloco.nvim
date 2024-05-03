@@ -2,6 +2,7 @@ local M = {}
 
 local defaultConfig = {
   theme = "dark",
+  disable_cache = false,
 }
 
 M.config = defaultConfig

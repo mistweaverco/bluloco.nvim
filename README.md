@@ -85,7 +85,8 @@ use {
   'mistweaverco/bluloco.nvim',
   config = function()
     require('bluloco').setup({
-      theme = 'dark', -- or 'light'
+      theme = 'dark', -- 'dark' or 'light'
+      disable_cache = false, -- if you want to disable the caching feature
     })
   end,
   lazy = false,
