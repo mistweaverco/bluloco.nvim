@@ -1,5 +1,6 @@
 local config = require("bluloco").config
-local compile_path = "lua/bluloco/cache"
+local lua_path = vim.fs.dirname(debug.getinfo(1).source:sub(2)) .. "/.."
+local compile_path = lua_path .. "/cache"
 local cache_path = compile_path .. "/" .. config.theme .. ".lua"
 
 local M = {}
