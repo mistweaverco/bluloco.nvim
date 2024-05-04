@@ -14,8 +14,8 @@ function M.reload()
 end
 
 function M.load()
-  vim.g.colors_name = 'bluloco'
   require('bluloco.colorscheme')
+  vim.g.colors_name = 'bluloco'
 end
 
 function M.setup(options)
