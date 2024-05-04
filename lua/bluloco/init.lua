@@ -10,7 +10,7 @@ local defaultConfig = {
 M.config = defaultConfig
 
 function M.reload()
-  require("bluloco.colorscheme")
+  M.load()
 end
 
 function M.load()
