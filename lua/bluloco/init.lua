@@ -13,6 +13,11 @@ function M.reload()
   require("bluloco.colorscheme")
 end
 
+function M.load()
+  vim.g.colors_name = 'bluloco'
+  require('bluloco.colorscheme')
+end
+
 function M.setup(options)
   M.config = vim.tbl_deep_extend("force", {}, defaultConfig, options or {})
   if M.config.dev then

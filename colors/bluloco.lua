@@ -1,1 +1,1 @@
-require('bluloco.colorscheme')
+require('bluloco').load()

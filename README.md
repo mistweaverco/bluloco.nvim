@@ -102,3 +102,18 @@ require('lualine').setup {
   }
 }
 ```
+
+## Performance comparison
+
+Because the original theme uses lush,
+it is slower than the lua version, with caching enabled.
+
+The performance is negligible, but I'm quite satified with the results,
+because caching got me headaches 🤯.
+
+| Variant                              | Total time |
+| ------------------------------------ | ---------- |
+| mistweaverco/bluloco.nvim (uncached) |     1.20ms |
+| mistweaverco/bluloco.nvim (cached)   |     0.68ms |
+| uloco/bluloco.nvim                   |     3.62ms |
+
