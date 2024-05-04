@@ -15,7 +15,7 @@ local on_event = function(err, filename, events)
     end
     local plugin = get_plugin()
     require("lazy.core.loader").reload(plugin)
-    require("bluloco").reload()
+    vim.cmd("colorscheme bluloco")
   end
 end
 
