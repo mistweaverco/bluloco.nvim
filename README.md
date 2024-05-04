@@ -68,17 +68,7 @@ Currently supported (aka. tested) plugins:
 
 ## Install
 
-Install Bluloco with your favorite package manager.
-
-### [packer](https://github.com/wbthomason/packer.nvim)
-
-```lua
-use {
-    'mistweaverco/bluloco.nvim'
-}
-```
-
-### [lazy.nvim](https://github.com/folke/lazy.nvim)
+Install Bluloco with your [lazy.nvim](https://github.com/folke/lazy.nvim):
 
 ```lua
 {
@@ -86,7 +76,9 @@ use {
   config = function()
     require('bluloco').setup({
       theme = 'dark', -- 'dark' or 'light'
+      terminal = true, -- 'true' or 'false', set the theme variant for terminal windows
       disable_cache = false, -- if you want to disable the caching feature
+      dev = false, -- set to true to disable cache entirely and enable hot reloading of the theme
     })
   end,
   lazy = false,
@@ -97,7 +89,6 @@ use {
 ## Usage
 
 ```lua
-vim.opt.termguicolors = true
 vim.cmd('colorscheme bluloco')
 ```
 #### Lualine

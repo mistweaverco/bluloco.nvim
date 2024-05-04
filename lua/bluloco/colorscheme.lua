@@ -4,7 +4,7 @@ local colors = {}
 if cache.exists() then
   colors = cache.read()
 else
-  colors = require("bluloco.colors.colors")
+  colors = require("bluloco.palette.colors")
   cache.write(colors)
 end
 

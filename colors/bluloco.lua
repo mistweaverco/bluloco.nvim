@@ -1,1 +1,1 @@
-require('bluloco.colors.colorscheme')
+require('bluloco.colorscheme')

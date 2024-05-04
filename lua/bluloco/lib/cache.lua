@@ -1,27 +1,30 @@
 local config = require("bluloco").config
-local lua_path = vim.fs.dirname(debug.getinfo(1).source:sub(2)) .. "/.."
-local compile_path = lua_path .. "/cache"
-local cache_path = compile_path .. "/" .. config.theme .. ".lua"
+local path = require("bluloco.lib.path")
 
 local M = {}
 
-
 M.exists = function()
-  if config.disable_cache then
+  if config.disable_cache or config.dev then
     return false
   end
-  return vim.fn.filereadable(cache_path) == 1
+  return vim.fn.filereadable(path.cache) == 1
 end
 
 M.write = function(colors)
+  if (config.disable_cache or config.dev) then
+    return
+  end
   local serpent = require("bluloco.lib.serpent")
   local str = serpent.dump(colors)
-  local file = io.open(cache_path, "wb")
+  local file = io.open(path.cache, "wb")
   file:write(str)
   file:close()
 end
 
 M.read = function()
+  if (config.disable_cache or config.dev) then
+    return nil
+  end
   local colors = require('bluloco.cache.' .. config.theme)
   if not colors then
     return nil
