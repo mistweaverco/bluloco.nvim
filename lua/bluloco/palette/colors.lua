@@ -1005,6 +1005,16 @@ colors["yamlBlockMappingKey"] = colors["Property"]
 colors["yamlKeyValueDelimiter"] = colors["Punctuation"]
 colors["yamlNodeTag"] = colors["Statement"]
 
+-- flash.nvim
+--https://github.com/folke/flash.nvim?tab=readme-ov-file#-highlights
+colors["FlashBackdrop"] = { fg = t.fg, bg = t.bg }
+colors["FlashMatch"] = { fg = t.selection, bg = t.grey40 }
+colors["FlashCurrent"] = { fg = t.fg, bg = t.bg }
+colors["FlashLabel"] = { fg = t.primary, bg = t.bg }
+colors["FlashPrompt"] = { fg = t.fg, bg = t.bg }
+colors["FlashCursor"] = { fg = t.fg, bg = t.bg }
+-- colors["FlashPromptIcon"] = { fg = t.fg, bg = t.bg }
+
 colorparser.parse(colors)
 
 return colors
