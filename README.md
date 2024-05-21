@@ -91,6 +91,16 @@ Install Bluloco with your [lazy.nvim](https://github.com/folke/lazy.nvim):
 ```lua
 vim.cmd('colorscheme bluloco')
 ```
+
+### Caching
+
+Because the compiled palette is quite large, the theme is cached by default.
+If you update the theme or modify it in any way, you can delete the cache by running:
+
+```lua
+require('bluloco').clear_cache()
+```
+
 #### Lualine
 
 Make sure your lualine settings are set to auto:
