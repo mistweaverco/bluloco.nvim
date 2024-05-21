@@ -190,7 +190,7 @@ colors["Normal"] = { fg = t.fg, bg = t.bg } -- normal text
 colors["CursorLine"] = { bg = t.grey7 }     -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
 colors["CursorColumn"] = colors["CursorLine"]     -- Screen-column at the cursor, when 'cursorcolumn' is set.
 colors["Whitespace"] = { fg = t.grey10 }
-colors["Comment"] = { fg = t.comment }
+colors["Comment"] = { fg = t.comment, italic = true } -- any comment
 colors["LineNr"] = { fg = t.comment }       -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
 colors["CursorLineNr"] = { fg = t.comment } -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
 colors["Search"] = { bg = t.search }
