@@ -3,6 +3,15 @@ local path = require("bluloco.lib.path")
 
 local M = {}
 
+M.clear = function()
+  if config.disable_cache or config.dev then
+    return
+  end
+  if vim.fn.filereadable(path.cache) == 1 then
+    assert(os.remove(path.cache))
+  end
+end
+
 M.exists = function()
   if config.disable_cache or config.dev then
     return false

@@ -5,7 +5,7 @@ local M = {}
 local has_no_gui = vim.fn.has("gui") == 0
 
 local function is_valid_key(key)
-  return key == "fg" or key == "bg" or key == "sp" or key == "gui" or key == "blend"
+  return key == "fg" or key == "bg" or key == "sp" or key == "gui" or key == "blend" or key == "italic" or key == "bold"
 end
 
 local is_valid_color_table = function(color)
