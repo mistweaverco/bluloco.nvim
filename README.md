@@ -24,7 +24,7 @@ This is a port of the popular Visual Studio Code Themes
 
 ### Screenshots
 
-See the [wiki screenshots section](https://github.com/mistweaverco/bluloco.nvim/wiki/Screenshots) for a lot of 😅.
+See the [wiki screenshots section](https://github.com/mistweaverco/bluloco.nvim/wiki/Screenshots) for a lot of 😅 screenshots.
 
 ## Features
 
