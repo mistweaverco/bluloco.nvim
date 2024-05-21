@@ -1,5 +1,5 @@
-![banner-light](./screenshots/banner-light.svg#gh-light-mode-only)
-![banner-dark](./screenshots/banner-dark.svg#gh-dark-mode-only)
+![banner-light](./assets/banner-light.svg#gh-light-mode-only)
+![banner-dark](./assets/banner-dark.svg#gh-dark-mode-only)
 
 # Bluloco.nvim
 
@@ -22,13 +22,9 @@ This is a port of the popular Visual Studio Code Themes
 [Bluloco Light](https://github.com/uloco/theme-bluloco-light) and
 [Bluloco Dark](https://github.com/uloco/theme-bluloco-dark)
 
-### Dark
+### Screenshots
 
-![dark](./screenshots/dark.png)
-
-### Light
-
-![light](./screenshots/light.png)
+See the [wiki screenshots section](https://github.com/mistweaverco/bluloco.nvim/wiki/Screenshots) for a lot of 😅.
 
 ## Features
 
