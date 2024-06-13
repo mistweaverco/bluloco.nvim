@@ -3,7 +3,7 @@ local M = {}
 local defaultConfig = {
   theme = "dark",
   terminal = true,
-  italic_comments = true,
+  italic_comments = false,
   disable_cache = false,
   dev = false,
 }

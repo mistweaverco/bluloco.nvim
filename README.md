@@ -73,7 +73,7 @@ Install Bluloco with your [lazy.nvim](https://github.com/folke/lazy.nvim):
     require('bluloco').setup({
       theme = 'dark', -- 'dark' or 'light'
       terminal = true, -- 'true' or 'false', set the theme variant for terminal windows
-      italic_comments = true, -- 'true' or 'false', use italic for comments
+      italic_comments = false, -- 'true' or 'false', use italic for comments
       disable_cache = false, -- if you want to disable the caching feature
       dev = false, -- set to true to disable cache entirely and enable hot reloading of the theme
     })
